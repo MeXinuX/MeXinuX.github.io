@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: #fff;
+    outline: none;
 }
 .icon:hover i{
     color: #fff;
