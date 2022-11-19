@@ -31,36 +31,42 @@
 }
 .icon:hover i{
     color: #fff;
+    box-shadow: none;
 }
 .icon .fa-facebook-f{
     color: #1A6ED8;
 }
 .fb:hover{
     background: #1A6ED8;
+    box-shadow: none;
 }
 .icon .fa-twitter{
     color: #1DA1F2;
 }
 .twt:hover{
     background: #1DA1F2;
+    box-shadow: none;
 }
 .icon .fa-linkedin-in{
     color: #0077B5;
 }
 .lnk:hover{
     background: #0077B5;
+    box-shadow: none;
 }
 .icon .fa-github{
     color: #000;
 }
 .git:hover{
     background: #000;
+    box-shadow: none;
 }
 .icon .fa-youtube{
     color: #FE0000;
 }
 .yt:hover{
     background: #FE0000;
+    box-shadow: none;
 }
 
 /* responsive */
