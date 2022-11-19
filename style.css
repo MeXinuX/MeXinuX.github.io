@@ -18,7 +18,7 @@
     line-height: 100px;
     font-family: sans-serif;
     overflow: hidden;
-    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
+    /* box-shadow: 5px 10px 20px rgba(150, 150, 150, .3); */
     transition: all .3s ease-out;
 }
 .icon:hover{
