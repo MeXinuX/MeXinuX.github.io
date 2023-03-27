@@ -1,7 +1,71 @@
-head
-{
-    content:href="MeXinuX.github.io/Resources/Images/MeXinuX Icon.png";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #343F4F;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+} 
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
 .main{
     width: 100%;
@@ -9,12 +73,7 @@ head
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(240, 240, 240);
-}
-a
-{
-    color: inherit;
-    text-decoration: none;
+    background: #343F4F;
 }
 .icon{
     width: 100px;
@@ -27,7 +86,7 @@ a
     line-height: 100px;
     font-family: sans-serif;
     overflow: hidden;
-    /* box-shadow: 5px 10px 20px rgba(150, 150, 150, .3); */
+    box-shadow: 5px 10px 20px rgba(150, 150, 150, .3);
     transition: all .3s ease-out;
 }
 .icon:hover{
@@ -37,46 +96,39 @@ a
     align-items: center;
     justify-content: space-evenly;
     color: #fff;
-    box-shadow: none;
 }
 .icon:hover i{
     color: #fff;
-    box-shadow: none;
 }
 .icon .fa-facebook-f{
     color: #1A6ED8;
 }
 .fb:hover{
     background: #1A6ED8;
-    box-shadow: none;
 }
 .icon .fa-twitter{
     color: #1DA1F2;
 }
 .twt:hover{
     background: #1DA1F2;
-    box-shadow: none;
 }
 .icon .fa-linkedin-in{
     color: #0077B5;
 }
 .lnk:hover{
     background: #0077B5;
-    box-shadow: none;
 }
 .icon .fa-github{
     color: #000;
 }
 .git:hover{
     background: #000;
-    box-shadow: none;
 }
 .icon .fa-youtube{
     color: #FE0000;
 }
 .yt:hover{
     background: #FE0000;
-    box-shadow: none;
 }
 
 /* responsive */
@@ -85,3 +137,4 @@ a
         flex-direction: column;
     }
 }
+
